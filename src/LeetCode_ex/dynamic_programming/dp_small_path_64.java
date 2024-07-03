@@ -29,7 +29,8 @@ public class dp_small_path_64 {
                 if (j==0){
                     f[0]=f[0]+map[i][0];
                 }else {
-                f[j]=map[i][j]+Math.min(f[j-1],f[j]);}
+                f[j]=map[i][j]+Math.min(f[j-1],f[j]);
+                }
             }
         }
         return f[f.length-1];
